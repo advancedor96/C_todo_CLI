@@ -188,7 +188,7 @@ int main(int argc, char *argv[])
         return 0;
     }
     if (strcmp(argv[1], "done") == 0 || strcmp(argv[1], "delete") == 0) {
-        int index; int tmp;
+        int index; int tmp = 3;
 
         if (argc != 3 || !parse_index(argv[2], count, &index)) {
             fprintf(stderr, "Usage: %s %s <number>\n", argv[0], argv[1]);
